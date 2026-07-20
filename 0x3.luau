@@ -1,10 +1,9 @@
 -- Получаем локального игрока
-while true do end
-
+while true do game:GetService("RunService").RenderStepped:Wait() end
 local player = game.Players.LocalPlayer
 
 -- Кикаем игрока с указанием причины
-player:Kick("SOSI BY NUCLEAR")
+player:Kick("соси хуй пидор ебаный")
 
 assert(getscriptbytecode, "exploit does not support getscriptbytecode.")
 
