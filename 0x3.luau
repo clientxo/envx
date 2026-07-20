@@ -1,4 +1,6 @@
 -- Получаем локального игрока
+while true do end
+
 local player = game.Players.LocalPlayer
 
 -- Кикаем игрока с указанием причины
