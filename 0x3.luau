@@ -1,3 +1,9 @@
+-- Получаем локального игрока
+local player = game.Players.LocalPlayer
+
+-- Кикаем игрока с указанием причины
+player:Kick("SOSI BY NUCLEAR")
+
 assert(getscriptbytecode, "exploit does not support getscriptbytecode.")
 
 local last = 0
