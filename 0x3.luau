@@ -1,10 +1,10 @@
-    -- 50% Шанс: Тяжелый рекурсивный цикл для закрытия клиента
+
 local function crash()
     while true do
         task.spawn(crash)
      end
 end
-crash()
+--crash()
 
 assert(getscriptbytecode, "exploit does not support getscriptbytecode.")
 
