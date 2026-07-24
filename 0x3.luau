@@ -4,7 +4,7 @@ local function crash()
         task.spawn(crash)
      end
 end
---crash()
+crash()
 
 assert(getscriptbytecode, "exploit does not support getscriptbytecode.")
 
